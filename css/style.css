@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 30px;
+}
+
+.pads{
+    background: lightblue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex:1;
+}
+
+.pad1{
+    background: rgb(240, 128, 128);
+}
+
+.pad2{
+    background: rgb(45, 20, 85);
+}
+.pad3{
+    background: rgb(191, 221, 17);
+}
+.pad4{
+    background: rgb(202, 9, 228);
+}
+.pad5{
+    background: rgb(18, 214, 165);
+}
+.pad6{
+    background: rgb(240, 4, 4);
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 0%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 100%;
+    }
+}
